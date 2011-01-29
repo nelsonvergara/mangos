@@ -1,0 +1,66 @@
+Have your Clients see your custom 'Breaking News' info at the logon screen. 
+
+I was curious how Blizz set up its 'Breaking News' dialog at the login screen...well I won't bother you with the details but can tell you that if you want your clients to see your 'Breaking News' then all they have to do is make the following entry in the hosts file (by default in the <WINDOWS>\system32\drivers\etc directory):
+1.2.3.4 launcher.worldofwarcraft.com
+where 1.2.3.4 is the IP address of your server. Yes, unfortunately since what you are doing is redirecting the message request to your server, you have to use an IP and not a name, therefore if your IP changes you will have to instruct your users to update the file (I just provide a download of a hosts file on my webpage along side the realmlist.wtf sample)
+
+
+A default hosts file looks like this:
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+# 102.54.94.97 rhino.acme.com # source server
+# 38.25.63.10 x.acme.com # x client host
+
+127.0.0.1 localhost
+
+so you just have to add the line to the end like this:
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+# 102.54.94.97 rhino.acme.com # source server
+# 38.25.63.10 x.acme.com # x client host
+
+127.0.0.1 localhost
+1.2.3.4 launcher.worldofwarcraft.com
+
+Lastly, you create a file on the root of you HTTP server called 'alert'. A sample of mine is as follows:
+<snip>
+SERVERALERT:
+May 3rd, 2010 21:05 MST
+
+Levelling up my hunter...w8n for some company.
+
+
+Staff At MyWoWServer
+</snip>
+
+NOTE that the first line must be as shown above: SERVERALERT: as the blizz parser looks for this.
+
+I searched through the forum for this information and couldn't find it.
+
+When I get some time I may add this funtionality to my DotNet app that can be downloaded to manage realmlists (similar to WoW FE) so that it can be enabled/disabled programmatically. 

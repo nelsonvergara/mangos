@@ -1,0 +1,31 @@
+Set up Mangos as Windows Service:
+
+In order to set up mangos to run as service (windows), all you have to do is just :
+
+1. Open Command Prompt
+
+2. Change directory to where mangosd.exe and realmd.exe can be found (for example C:\ReaperMangos5472) by typing :
+
+cd C:\ReaperMangos5472
+
+or
+
+cd /d C:\ReaperMangos5472
+
+3. and then to install the realmd.exe and mangosd.exe as service, you need to type these:
+
+mangosd.exe -s install
+realmd.exe -s install
+
+to install it as windows service … or type …
+
+mangosd.exe -s uninstall
+realmd.exe -s uninstall
+
+to uninstall / remove it from windows service
+
+OR if you prefer a more direct way of doing it … you can type:
+
+C:\ReaperMangos5472\mangosd.exe -s install / -s uninstall
+
+directly without changing directory first 

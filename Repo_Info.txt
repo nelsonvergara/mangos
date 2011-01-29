@@ -1,0 +1,12 @@
+Info File
+
+This Repo contains
+	1)mmaps_rewrite by Faramir118 repo: github.com/faramir118/mangos.git mmaps_rewrite
+	2)AHBot by many people last by Cyberium  repo: github.com/cyberium/mangos.git new_ahbot
+	
+The base is as always Mangos repo: github.com/mangos/mangos.git
+
+As I find new and working things to patch it with this list will be updated.
+
+DaemonCantor
+gamers.webhop.net

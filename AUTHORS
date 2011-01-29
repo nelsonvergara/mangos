@@ -1,20 +1,41 @@
-The AUTHORS file:
+The Authors
+     of
+Gamers World of Warcraft.
 
-This file should collect a trace of all the legal paperwork that you have
-exchanged with contributors for your particular package. This information is
-very useful for registering the copyright of your package. The file might
-have an introductory blurb similar to this one:
+The MaNGOS Development Team
+Core Creation and whom all Blame is to be SENT!
 
- Authors of PACKAGE
+DaemonCantor
+Owner and Mad Scientist.
+Major Pain in the ASS!
 
- The following contributions warranted legal paper exchanges
- with [the Free Software Foundation | Your Name].
- Also see files ChangeLog and THANKS
+DaViper
+Core Mods, sql Fixes, SD2 Fix
+Smart Ass!
 
-Then, list who the contributors are and what files they have worked on.
-Indicate whether they created the file, or whether they modified it. For
-example:
+UncleNuke
+Core Mods
+Well if you ain't figgured it out Forget it!
 
- Random J. Hacker:
-   entire files  -> foo1.c , foo2.c , foo3.c
-   modifications -> foo4.c , foo5.c
+Wojta, Taponinet, False.Genesis, DaViper
+Core Mods
+Vehicles.
+
+Xeross, Cyberium
+Core Mods
+ahbot (Dam Nice to have a Working Autionhouse!).
+
+Blueboy
+Core Mods
+Playerbot (Dam nice having your own toon's watching your back).
+
+Schmoozard
+Core Mods, SD2
+Several fixes in core to help Scripting.
+
+HS3
+Various Patches and Fixes.
+
+NoFantasy
+Various Core Fixes for Scripting.
+
